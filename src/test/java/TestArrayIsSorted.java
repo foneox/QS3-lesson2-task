@@ -14,7 +14,7 @@ public class TestArrayIsSorted {
         return new Object[][]{
                 {10, 10},
                 {100,100},
-                {200,200}
+                {200,210}
         };
     }
     @Test(dataProvider = "test1")
