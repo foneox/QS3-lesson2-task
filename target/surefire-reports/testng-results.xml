@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestArrayIsSorted" duration-ms="21" started-at="2014-03-11T21:36:17Z" finished-at="2014-03-11T21:36:18Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="21" started-at="2014-03-11T21:36:17Z" finished-at="2014-03-11T21:36:18Z">
+      <class name="TestArrayIsSorted">
+        <test-method status="PASS" signature="testingTest2(int, int)[pri:0, instance:TestArrayIsSorted@4ec4750f]" name="testingTest2" duration-ms="7" started-at="2014-03-11T21:36:17Z" finished-at="2014-03-11T21:36:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testingTest2(int, int)[pri:0, instance:TestArrayIsSorted@4ec4750f]" name="testingTest2" duration-ms="1" started-at="2014-03-11T21:36:18Z" finished-at="2014-03-11T21:36:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testingTest2(int, int)[pri:0, instance:TestArrayIsSorted@4ec4750f]" name="testingTest2" duration-ms="0" started-at="2014-03-11T21:36:18Z" finished-at="2014-03-11T21:36:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
