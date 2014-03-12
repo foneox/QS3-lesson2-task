@@ -1,25 +1,41 @@
-/**
- * Created by Sergii on 3/11/14.
- * [home task]
- Тестирование сортировки массива по возрастанию. Предавать массив для тестирования через data provider, или parameters.
- */
-        import org.testng.Assert;
-        import org.testng.annotations.DataProvider;
-        import org.testng.annotations.Parameters;
-        import org.testng.annotations.Test;
+import com.sun.org.apache.regexp.internal.RETest;
+import org.testng.Assert;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestArrayIsSorted {
-    @DataProvider(name = "test1")
-    public Object[][] provideData(){
-        return new Object[][]{
-                {10, 10},
-                {100,100},
-                {200,210}
-        };
+
+    @Parameters({"testArray"})
+    @Test
+    public class ArraySort {
+
+        @Parameters({"testArray"})
+        @Test
+        public void testIfArrayIsSortedMinMax(String testArray) {
+
+            String[] arrayInString = testArray.split(" ");
+            int[] testArrayInt = new int[arrayInString.length];
+            int counter = 0;
+
+            for (String str : arrayInString)
+                testArrayInt[counter++] = Integer.parseInt(str);
+
+            boolean arrayIsSorted = true;
+
+            for(int i = 0; i < testArrayInt.length - 1; i++) {
+                if(testArrayInt[i+1] < testArrayInt[i]) {
+                    arrayIsSorted = false;
+                    break;
+                }
+            }
+
+            Assert.assertTrue(arrayIsSorted);
+
     }
-    @Test(dataProvider = "test1")
-    public void testingTest2(int value1, int value2){
-//System.out.println("New TEST!!!! "+ param1 +param2);
-        Assert.assertEquals(value1, value2);
     }
 }
+
+

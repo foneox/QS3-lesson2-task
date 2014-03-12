@@ -7,6 +7,20 @@
     <groupId>QS3-lesson2-task</groupId>
     <artifactId>QS3-lesson2-task</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.4</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>
@@ -23,6 +37,7 @@
             <url>https://github.com/foneox/QS3-lesson2-task</url>
         </repository>
     </repositories>
+
 
 
 </project>

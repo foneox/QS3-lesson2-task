@@ -2,6 +2,8 @@
 
 <suite name="Suite1" verbose="1" >
     <test name="Nopackage" >
+
+        <parameter name="testArray" value="3 2 3 4 5"/>
         <classes>
             <class name="TestArrayIsSorted"/>
         </classes>
